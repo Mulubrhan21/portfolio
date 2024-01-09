@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f60;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.animated {
+    opacity: 0;
+}
+
+.about-me,
+.professional-experience,
+.education,
+.projects,
+.skills,
+.languages,
+.certifications,
+.conferences,
+.references,
+.footer {
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+.about-me.animated.fadeIn,
+.professional-experience.animated.fadeIn,
+.education.animated.fadeIn,
+.projects.animated.fadeIn,
+.skills.animated.fadeIn,
+.languages.animated.fadeIn,
+.certifications.animated.fadeIn,
+.conferences.animated.fadeIn,
+.references.animated.fadeIn,
+.footer.animated.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
